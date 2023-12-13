@@ -7,7 +7,7 @@ public class Product {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(name).append(" $ ").append(price).append(" ").append("\n");
+        sb.append(name).append(" $ ").append(price).append(" ");
         return sb.toString();
     }
 

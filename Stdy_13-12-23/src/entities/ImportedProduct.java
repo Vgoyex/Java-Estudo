@@ -7,7 +7,7 @@ public class ImportedProduct extends Product{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(name).append(" $ ").append(price).append(" ").append("(Customs fee: $").append(customsFee).append(")").append("\n");
+        sb.append(name).append(" $ ").append(price).append(" ").append("(Customs fee: $").append(customsFee).append(")");
         return sb.toString();
     }
 
