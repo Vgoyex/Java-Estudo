@@ -17,8 +17,9 @@ public class Main {
         System.out.print("Enter the number of products: ");
         int num = sc.nextInt();
         for(int i=0;i<num;i++){
-            System.out.println("Product #" + (i+1) + "data: ");
+            System.out.println("Product #" + (i+1) + " data: ");
             System.out.print("Common, used or imported (c/u/i)? ");
+            sc.nextLine();
             String type = sc.nextLine();
             if(type.toLowerCase() == "i"){
                 System.out.print("Name: ");
@@ -49,7 +50,8 @@ public class Main {
                 productList.add(product);
             }
 
-        //Printing products
+        //Printing product
+        System.out.println("PRICE TAGS:");
         for(Product data : productList) {
             System.out.println(data);
         }
